@@ -1,0 +1,25 @@
+/*
+
+FONTES
+
+*/
+
+/* Fontes App  */
+
+@font-face {
+  font-family: 'regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.redireci.one/fonts/global/cynthonext-regular.woff') format('woff'),
+       url('https://static.redireci.one/fonts/global/cynthonext-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://static.redireci.one/fonts/global/cynthonext-bold.woff') format('woff'),
+       url('https://static.redireci.one/fonts/global/cynthonext-bold.ttf') format('truetype');
+}

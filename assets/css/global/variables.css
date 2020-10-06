@@ -1,0 +1,68 @@
+/*
+
+VARIVEIS DO WEBSITE REDIRECIONE
+
+*/
+
+/* Cores */
+
+:root {
+
+--cor-primaria-1: #24242B;
+--cor-primaria-2: #26262D;
+--cor-primaria-3: #292930;
+--cor-primaria-4: #3A3A44;
+--cor-primaria-5: #555560;
+--cor-primaria-6: #8D8D99;
+
+--cor-verde: #1EED89;
+--cor-verde-escuro: #4DB57E;
+
+--cor-vermelho: #FE5D7A;
+--cor-vermelho-escuro: #A03D5C;
+
+--cor-amarelo: #FFCD4B;
+--cor-amarelo-escuro: #CEA345;
+
+--cor-azul: #49D3FF;
+--cor-azul-escuro: #0097BA;
+
+--cor-branco: #FFFFFF;
+--cor-preto: #000000;
+
+}
+
+/* Fontes */
+
+:root {
+
+--fonte-app-regular: 'regular';
+--fonte-app-bold: 'bold';
+
+}
+
+/* Bordas */
+
+:root {
+
+--borda-tracado-padrao: 2px dashed var(--cor-primaria-5);
+--borda-tracado-branco: 2px dashed var(--cor-branco);
+
+}
+
+/* Border Radius */
+
+:root {
+
+--radius: 0px;
+
+}
+
+/* Paddings */
+
+:root {
+
+--padding: 0px;
+
+}
+

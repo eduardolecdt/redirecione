@@ -1,0 +1,27 @@
+/*
+
+ANIMATIONS
+
+*/
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

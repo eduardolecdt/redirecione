@@ -127,7 +127,7 @@ svg {
 
 ::selection {
   color: var(--cor-branco);
-  background-color: var(--cor-primaria-1);
+  background-color: var(--cor-primaria-6);
 }
 
 h1,h2,h3,h4,h5,h6 {

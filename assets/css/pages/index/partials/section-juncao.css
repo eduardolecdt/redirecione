@@ -5,5 +5,107 @@ INDEX PARTIALS SECTION JUNCAO
 */
 
 section.juncao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
   background-color: var(--cor-primaria-3);
+  background-image: url('../../../../../images/desktop/background-juncao.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Imagem */
+
+section.juncao .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+section.juncao .imagem img {
+  width: 100%;
+  max-width: 500px;
+}
+
+section.juncao .imagem img.desktop {
+  display: flex;
+}
+
+section.juncao .imagem img.mobile {
+  display: none;
+}
+
+/* Quadro */
+
+section.juncao .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 10px;
+}
+
+section.juncao .quadro p {
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  position: absolute;
+  bottom: 40px;
+}
+
+section.juncao .quadro .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+section.juncao .quadro .titulo img {
+  width: 100%;
+  max-width: 200px;
+}
+
+section.juncao .quadro .titulo h3 {
+  width: 100%;
+  max-width: 400px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.juncao {
+    flex-direction: column;
+    padding: 50px 20px 50px 20px;
+    background-image: url('../../../../../images/mobile/background-juncao.svg');
+  }
+  section.juncao .imagem img.desktop {
+    display: none;
+  }
+  section.juncao .imagem img.mobile {
+    display: flex;
+  }
+  section.juncao .imagem {
+    justify-content: center;
+  }
+  section.juncao .quadro .titulo {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  section.juncao .quadro .titulo h3 {
+    padding-top: 30px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  section.juncao .quadro p {
+    position: unset;
+  }
 }

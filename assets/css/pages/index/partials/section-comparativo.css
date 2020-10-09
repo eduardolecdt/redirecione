@@ -5,5 +5,108 @@ INDEX PARTIALS SECTION COMPARATIVO
 */
 
 section.comparativo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 50px 0px;
   background-color: var(--cor-primaria-1);
+  background-image: url('../../../../../images/desktop/background-comparativo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* titulo */
+
+section.comparativo .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+section.comparativo .titulo h2 {
+  max-width: 350px;
+}
+
+section.comparativo .titulo p {
+  max-width: 400px;
+  padding: 10px 0px 30px 0px;
+}
+
+section.comparativo .titulo img {
+  max-width: 80px;
+}
+
+/* itens */
+
+section.comparativo .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  overflow-x: scroll;
+  min-height: 550px;
+  height: 550px;
+}
+
+section.comparativo .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 520px;
+  height: 520px;
+  margin-left: 20px;
+}
+
+section.comparativo .itens .item.primeiro {
+  margin-left: 0px;
+}
+
+section.comparativo .itens .item p {
+  position: absolute;
+  top: 0px;
+  background-color: var(--cor-branco);
+  padding: var(--padding-quadro);
+  font-family: var(--fonte-app-bold);
+  border-radius: var(--radius-quadro);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section.comparativo .itens .item p span.vermelho {
+  color: var(--cor-vermelho);
+}
+
+section.comparativo .itens .item p span.azul {
+  color: var(--cor-azul);
+}
+
+section.comparativo .itens .item img {
+  border-radius: var(--radius-quadro);
+  width: 100%;
+  min-width: 280px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.comparativo {
+    flex-direction: column;
+    padding: 60px 0px 0px 0px;
+    background-image: url('../../../../../images/mobile/background-comparativo.svg');
+  }
+  section.comparativo .titulo {
+    padding: 0px 20px 50px 20px;
+  }
+  section.comparativo .itens {
+    padding: 0px 20px;
+  }
 }

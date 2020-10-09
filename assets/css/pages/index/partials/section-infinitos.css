@@ -5,5 +5,89 @@ INDEX PARTIALS SECTION INFINITOS
 */
 
 section.infinitos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
   background-color: var(--cor-primaria-1);
+  background-image: url('../../../../../images/desktop/background-infinitos.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* Imagem */
+
+section.infinitos .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+section.infinitos .imagem .celular {
+  width: 100%;
+  max-width: 400px;
+}
+
+section.infinitos .imagem .clique {
+  width: 100%;
+  max-width: 100px;
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  cursor: pointer;
+}
+
+section.infinitos .imagem .clique:hover {
+  opacity: 0.5;
+}
+
+/* Titulo */
+
+section.infinitos .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+section.infinitos .titulo h2 {
+  width: 100%;
+  max-width: 350px;
+}
+
+section.infinitos .titulo p {
+  width: 100%;
+  max-width: 450px;
+  padding: 10px 0px 30px 0px;
+}
+
+section.infinitos .titulo img {
+  width: 100%;
+  max-width: 100px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 900px) {
+  section.infinitos {
+    flex-direction: column;
+    padding: 20px 20px 80px 20px;
+    background-image: url('../../../../../images/mobile/background-infinitos.svg');
+    background-position: left bottom;
+  }
+  section.infinitos .imagem {
+    margin-bottom: 50px;
+  }
+  section.infinitos .imagem .celular {
+    max-width: 350px;
+  }
+  section.infinitos .imagem .clique {
+    max-width: 80px;
+    right: 30px;
+  }
 }

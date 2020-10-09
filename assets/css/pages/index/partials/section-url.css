@@ -67,12 +67,15 @@ section.url .enfeite.baixo {
 /* Responsivo */
 
 @media screen and (max-width: 700px) {
+  section.url {
+    background-image: url('../../../../../images/mobile/background-url.svg');
+  }
   section.url .enfeite img {
     max-width: 20px;
   }
   section.url .titulo h2 {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
   }
   section.url .enfeite.cima {
     top: 0px;

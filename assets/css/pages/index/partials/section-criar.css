@@ -133,6 +133,7 @@ section.criar .opcoes .icones .icone.selecionado {
 
 section.criar .opcoes .icones .icone.selecionado:hover {
   border: 2px solid var(--cor-primaria-3);
+  cursor: default;
 }
 
 section.criar .opcoes .icones .icone.meio {
@@ -166,6 +167,15 @@ section.criar .opcoes .cores .cor {
 section.criar .opcoes .cores .cor.selecionado {
   border: 15px double var(--cor-preto);
   transform: scale(1.1);
+}
+
+section.criar .opcoes .cores .cor.selecionado:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+section.criar .opcoes .cores .cor:hover {
+  opacity: 0.6;
 }
 
 section.criar .opcoes .cores .cor.verde {

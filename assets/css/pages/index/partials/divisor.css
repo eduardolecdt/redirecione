@@ -1,0 +1,94 @@
+/*
+
+INDEX PARTIALS DIVISOR
+
+*/
+
+div.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+div.divisor img.desktop {
+  display: flex;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+div.divisor img.mobile {
+  display: none;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+/* Backgrounds */
+
+div.divisor.um {
+  background-color: var(--cor-primaria-1);
+}
+
+div.divisor.dois {
+  background-color: var(--cor-primaria-3);
+}
+
+div.divisor.tres {
+  background-color: var(--cor-preto);
+}
+
+div.divisor.quatro {
+  background-color: var(--cor-primaria-2);
+}
+
+div.divisor.cinco {
+  background-color: var(--cor-primaria-0);
+}
+
+div.divisor.seis {
+  background-color: var(--cor-preto);
+}
+
+div.divisor.sete {
+  background-color: var(--cor-primaria-2);
+}
+
+div.divisor.oito {
+  background-color: var(--cor-primaria-1);
+}
+
+div.divisor.nove {
+  background-color: var(--cor-primaria-0);
+}
+
+div.divisor.dez {
+  background-color: var(--cor-primaria-2);
+}
+
+div.divisor.onze {
+  background-color: var(--cor-primaria-0);
+}
+
+div.divisor.doze {
+  background-color: var(--cor-preto);
+}
+
+div.divisor.treze {
+  background-color: var(--cor-branco);
+}
+
+div.divisor.quatorze {
+  background-color: var(--cor-primaria-2);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 700px) {
+  div.divisor img.desktop {
+    display: none;
+  }
+  div.divisor img.mobile {
+    display: flex;
+  }
+}

@@ -7,3 +7,21 @@ INDEX
 @import '../../global/global.css';
 
 /* Partials */
+
+@import './partials/divisor.css';
+
+@import './partials/header.css';
+@import './partials/section-comparativo.css';
+@import './partials/section-juncao.css';
+@import './partials/section-todos.css';
+@import './partials/section-celular.css';
+@import './partials/section-responsivo.css';
+@import './partials/section-criar.css';
+@import './partials/section-url.css';
+@import './partials/section-infinitos.css';
+@import './partials/section-pixel.css';
+@import './partials/section-banco.css';
+@import './partials/section-clientes.css';
+@import './partials/section-preco.css';
+@import './partials/section-assinar.css';
+@import './partials/footer.css';

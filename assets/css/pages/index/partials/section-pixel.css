@@ -5,5 +5,62 @@ INDEX PARTIALS SECTION PIXEL
 */
 
 section.pixel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
   background-color: var(--cor-primaria-0);
+  background-image: url('../../../../../images/desktop/background-pixel.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Titulo */
+
+section.pixel .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+section.pixel .titulo h2 {
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+section.pixel .titulo p {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Imagem */
+
+section.pixel .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.pixel .imagem img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 900px) {
+  section.pixel {
+    flex-direction: column-reverse;
+    background-image: url('../../../../../images/mobile/background-pixel.svg');
+    background-position: center;
+  }
+  section.pixel .imagem img {
+    max-width: 230px;
+  }
 }

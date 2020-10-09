@@ -11,8 +11,8 @@ FONTES
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://static.redireci.one/fonts/global/cynthonext-regular.woff') format('woff'),
-       url('https://static.redireci.one/fonts/global/cynthonext-regular.ttf') format('truetype');
+  src: url('https://static.redireci.one/app/fonts/global/cynthonext-regular.woff') format('woff'),
+       url('https://static.redireci.one/app/fonts/global/cynthonext-regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -20,6 +20,6 @@ FONTES
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://static.redireci.one/fonts/global/cynthonext-bold.woff') format('woff'),
-       url('https://static.redireci.one/fonts/global/cynthonext-bold.ttf') format('truetype');
+  src: url('https://static.redireci.one/app/fonts/global/cynthonext-bold.woff') format('woff'),
+       url('https://static.redireci.one/app/fonts/global/cynthonext-bold.ttf') format('truetype');
 }

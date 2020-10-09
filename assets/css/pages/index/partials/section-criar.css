@@ -5,5 +5,217 @@ INDEX PARTIALS SECTION CRIAR
 */
 
 section.criar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
   background-color: var(--cor-preto);
+}
+
+/* Titulo */
+
+section.criar .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.criar .titulo .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.criar .titulo .texto img {
+  width: 100%;
+  max-width: 100px;
+}
+
+section.criar .titulo .texto h2 {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 0px 10px 0px;
+}
+
+section.criar .titulo .texto p {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Titulo Preview */
+
+section.criar .titulo .preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF0043;
+  height: 400px;
+  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
+  max-width: 330px;
+  padding: var(--padding-quadro-maior);
+  border-radius: var(--radius-quadro-maior);
+  margin-top: 60px;
+}
+
+section.criar .titulo .preview img {
+  width: 100%;
+  max-width: 100px;
+}
+
+section.criar .titulo .preview p {
+  font-family: var(--fonte-app-regular);
+  font-size: 1.1rem;
+  color: var(--cor-branco);
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  width: 100%;
+  max-width: 200px;
+}
+
+section.criar .titulo .preview button {
+  font-family: var(--fonte-app-bold);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #FF0043;
+  padding: var(--padding-botao);
+  background-color: var(--cor-branco);
+  border-radius: var(--radius-botao);
+}
+
+/* Opcoes */
+
+section.criar .opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+section.criar .opcoes label {
+  font-family: var(--fonte-app-bold);
+  color: var(--cor-branco);
+  letter-spacing: 2px;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+/* Opcoes Icones */
+
+section.criar .opcoes .icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section.criar .opcoes .icones .icone {
+  width: 120px;
+  height: 120px;
+  border: var(--borda-tracado-padrao);
+  border-radius: var(--radius-quadro);
+  padding: var(--padding-quadro-maior);
+  cursor: pointer;
+}
+
+section.criar .opcoes .icones .icone.selecionado {
+  background-color: var(--cor-primaria-3);
+  border: 2px solid var(--cor-primaria-3);
+}
+
+section.criar .opcoes .icones .icone.selecionado:hover {
+  border: 2px solid var(--cor-primaria-3);
+}
+
+section.criar .opcoes .icones .icone.meio {
+  margin: 0px 20px;
+}
+
+section.criar .opcoes .icones .icone:hover {
+  border: var(--borda-tracado-branco);
+}
+
+section.criar .opcoes .icones .icone img {
+  width: 100%;
+}
+
+/* Opcoes Cores */
+
+section.criar .opcoes .cores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.criar .opcoes .cores .cor {
+  width: 85px;
+  height: 85px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border-radius: var(--radius-circulo);
+}
+
+section.criar .opcoes .cores .cor.selecionado {
+  border: 15px double var(--cor-preto);
+  transform: scale(1.1);
+}
+
+section.criar .opcoes .cores .cor.verde {
+  background-color: #37CC6C;
+}
+
+section.criar .opcoes .cores .cor.rosa {
+  background-color: #FF0043;
+}
+
+section.criar .opcoes .cores .cor.cinza {
+  background-color: #5E5E68;
+}
+
+section.criar .opcoes .cores .cor.gradiente {
+  background-image: linear-gradient(0deg, #4F8DCF, #4200B1);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.criar {
+    flex-direction: column-reverse;
+  }
+  section.criar .titulo {
+    flex-direction: column-reverse;
+  }
+  section.criar .titulo .texto {
+    margin-top: 70px;
+  }
+  section.criar .titulo .preview {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.criar .titulo .texto {
+    text-align: left;
+    align-items: flex-start;
+  }
+  section.criar .opcoes .icones .icone {
+    width: 80px;
+    height: 80px;
+    padding: var(--padding-quadro);
+  }
+  section.criar .opcoes .cores .cor {
+    width: 57px;
+    height: 57px;
+  }
+  section.criar .opcoes .cores .cor.selecionado {
+    transform: scale(1.2);
+  }
 }

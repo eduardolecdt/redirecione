@@ -7,7 +7,7 @@ ELEMENTS TEXTS
 .titulo_grande {
   font-family: var(--fonte-app-bold);
   color: var(--cor-branco);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 1px;
 }

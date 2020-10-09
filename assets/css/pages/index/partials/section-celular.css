@@ -5,5 +5,97 @@ INDEX PARTIALS SECTION CELULAR
 */
 
 section.celular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
   background-color: var(--cor-primaria-2);
+  background-image: url('../../../../../images/desktop/background-celular.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+}
+
+/* Enfeite */
+
+section.celular .enfeite {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+section.celular .enfeite img {
+  width: 100%;
+  max-width: 30px;
+}
+
+/* Titulo */
+
+section.celular .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+section.celular .titulo img {
+  width: 100%;
+  max-width: 80px;
+}
+
+section.celular .titulo h2 {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px 0px 10px 0px;
+}
+
+section.celular .titulo p {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Imagem */
+
+section.celular .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section.celular .imagem img.celular {
+  width: 100%;
+  max-width: 350px;
+}
+
+section.celular .imagem img.mao {
+  position: absolute;
+  right: -90px;
+  top: 150px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsivo */
+
+
+@media screen and (max-width: 900px) {
+  section.celular {
+    flex-direction: column-reverse;
+    background-image: url('../../../../../images/mobile/background-celular.svg');
+    background-position: center;
+  }
+  section.celular .titulo {
+    padding: 50px 20px 0px 20px;
+  }
+  section.celular .enfeite img {
+    width: 100%;
+    max-width: 20px;
+  }
 }

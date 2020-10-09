@@ -1,0 +1,31 @@
+/*
+
+ELEMENTS TEXTS
+
+*/
+
+.titulo_grande {
+  font-family: var(--fonte-app-bold);
+  color: var(--cor-branco);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.descricao_normal {
+  font-family: var(--fonte-app-regular);
+  color: var(--cor-primaria-6);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 700px) {
+  .titulo_grande {
+    font-size: 1.2rem;
+  }
+  .descricao_normal {
+    font-size: 1rem;
+  }
+}

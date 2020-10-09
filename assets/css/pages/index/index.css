@@ -6,6 +6,11 @@ INDEX
 
 @import '../../global/global.css';
 
+/* Elements */
+
+@import '../../elements/texts.css';
+@import '../../elements/buttons.css';
+
 /* Partials */
 
 @import './partials/divisor.css';

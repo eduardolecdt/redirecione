@@ -55,7 +55,7 @@ VARIVEIS DO WEBSITE REDIRECIONE
 
 :root {
 
---radius: 0px;
+--radius-botao: 10px;
 
 }
 
@@ -63,7 +63,7 @@ VARIVEIS DO WEBSITE REDIRECIONE
 
 :root {
 
---padding: 0px;
+--padding-botao: 13px 20px;
 
 }
 

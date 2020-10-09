@@ -1,0 +1,47 @@
+/*
+
+ELEMENTS BUTTONS
+
+*/
+
+/* Importante */
+
+button.importante {
+  font-family: var(--fonte-app-bold);
+  background-color: var(--cor-branco);
+  padding: var(--padding-botao);
+  border-radius: var(--radius-botao);
+  color: var(--cor-primaria-4);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+button.importante:hover {
+  background-color: var(--cor-primaria-4);
+  color: var(--cor-branco);
+}
+
+/* Transparente */
+
+button.transparente {
+  font-family: var(--fonte-app-bold);
+  background-color: transparent;
+  color: var(--cor-branco);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+button.transparente:hover {
+  opacity: 0.7;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 700px) {
+  button.importante {
+    font-size: 0.9rem;
+  }
+  button.transparente {
+    font-size: 0.9rem;
+  }
+}

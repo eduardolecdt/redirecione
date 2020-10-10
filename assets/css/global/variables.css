@@ -15,6 +15,7 @@ VARIVEIS DO WEBSITE REDIRECIONE
 --cor-primaria-4: #3A3A44;
 --cor-primaria-5: #555560;
 --cor-primaria-6: #8D8D99;
+--cor-primaria-7: #c9c9d3;
 
 --cor-verde: #1EED89;
 --cor-verde-escuro: #4DB57E;
@@ -48,6 +49,7 @@ VARIVEIS DO WEBSITE REDIRECIONE
 
 --borda-tracado-padrao: 2px dashed var(--cor-primaria-5);
 --borda-tracado-branco: 2px dashed var(--cor-branco);
+--borda-tracado-claro: 2px dashed var(--cor-primaria-7);
 
 }
 

@@ -5,5 +5,202 @@ INDEX PARTIALS SECTION ASSINAR
 */
 
 section.assinar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
   background-color: var(--cor-branco);
+}
+
+/* Valor */
+
+section.assinar .valor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.assinar .valor .mensalidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+section.assinar .valor .mensalidade h2 {
+  font-family: var(--fonte-app-bold);
+  color: var(--cor-primaria-3);
+  letter-spacing: 1px;
+  font-size: 8rem;
+}
+
+section.assinar .valor .mensalidade h2 span {
+  font-size: 4rem;
+}
+
+section.assinar .valor .mensalidade p {
+  font-family: var(--fonte-app-bold);
+  color: var(--cor-primaria-6);
+  padding: var(--padding-quadro);
+  border: var(--borda-tracado-claro);
+  border-radius: var(--radius-quadro);
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin: 0px 0px 30px 0px;
+}
+
+section.assinar .valor .mensalidade img {
+  width: 100%;
+  max-width: 100px;
+}
+
+/* Acao */
+
+section.assinar .acao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.assinar .acao .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+section.assinar .acao .botao button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--cor-primaria-3);
+  color: var(--cor-branco);
+  font-family: var(--fonte-app-bold);
+  border-radius: var(--radius-quadro-maior);
+  padding: 40px 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  max-width: 400px;
+}
+
+section.assinar .acao .botao button:hover {
+  background-color: var(--cor-amarelo);
+  box-shadow: 0px 0px 50px 0px var(--cor-amarelo);
+}
+
+section.assinar .acao .botao button:hover img {
+  bottom: -150px;
+  opacity: 0.5;
+}
+
+section.assinar .acao .botao button p.maior {
+  font-size: 2.5rem;
+}
+
+section.assinar .acao .botao button p.menor {
+  font-size: 1.1rem;
+}
+
+section.assinar .acao .botao button img {
+  position: absolute;
+  bottom: -110px;
+  width: 100%;
+  max-width: 150px;
+}
+
+/* Beneficios */
+
+section.assinar div .beneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 80%;
+}
+
+section.assinar div.valor .beneficios {
+  padding-right: 100px;
+}
+
+section.assinar div.acao .beneficios {
+  padding-left: 100px;
+}
+
+section.assinar div .beneficios .linha {
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+section.assinar div .beneficios .linha img {
+  width: 100%;
+  max-width: 40px;
+}
+
+section.assinar div .beneficios .linha p {
+  padding-left: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.assinar {
+    padding: 100px 20px 150px 20px;
+  }
+  section.assinar .valor {
+    flex-direction: column;
+  }
+  section.assinar .acao {
+    flex-direction: column;
+  }
+  section.assinar div .beneficios {
+    width: 100%;
+    max-width: 600px;
+  }
+  section.assinar div.valor .beneficios {
+    padding-right: 0px;
+    margin-top: 50px;
+  }
+  section.assinar div.acao .beneficios {
+    padding-left: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.assinar .valor .mensalidade h2 span {
+    font-size: 3rem;
+  }
+  section.assinar .valor .mensalidade p {
+    font-size: 0.9rem;
+  }
+  section.assinar .acao .botao button {
+    padding: 30px 20px;
+    max-width: 350px;
+  }
+  section.assinar .acao .botao button p.maior {
+    font-size: 2.0rem;
+  }
+  section.assinar .acao .botao button p.menor {
+    font-size: 0.9rem;
+  }
+  section.assinar .acao .botao button img {
+    bottom: -90px;
+    max-width: 120px;
+  }
+  section.assinar .acao .botao button:hover img {
+    bottom: -120px;
+  }
 }

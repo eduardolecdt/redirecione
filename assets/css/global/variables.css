@@ -58,6 +58,7 @@ VARIVEIS DO WEBSITE REDIRECIONE
 --radius-botao: 10px;
 --radius-quadro: 15px;
 --radius-quadro-maior: 25px;
+--radius-quadro-menor: 10px;
 --radius-circulo: 50%;
 
 }
@@ -69,6 +70,8 @@ VARIVEIS DO WEBSITE REDIRECIONE
 --padding-botao: 13px 20px;
 --padding-quadro: 13px;
 --padding-quadro-maior: 25px;
+--padding-quadro-menor: 10px 20px;
+--padding-quadro-medio: 15px 30px;
 
 }
 

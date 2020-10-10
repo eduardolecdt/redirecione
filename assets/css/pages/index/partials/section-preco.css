@@ -5,5 +5,107 @@ INDEX PARTIALS SECTION PRECO
 */
 
 section.preco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
   background-color: var(--cor-preto);
+}
+
+/* Titulo */
+
+section.preco .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+section.preco .titulo h2 {
+  width: 100%;
+  max-width: 470px;
+}
+
+section.preco .titulo p {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 0px 30px 0px;
+}
+
+section.preco .titulo img {
+  width: 100%;
+  max-width: 100px;
+}
+
+/* Itens */
+
+section.preco .itens {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  height: 450px;
+  min-height: 450px;
+  max-height: 450px;
+  width: 100%;
+}
+
+section.preco .itens .item {
+  min-width: 350px;
+  position: relative;
+}
+
+section.preco .itens .item img {
+  width: 100%;
+}
+
+section.preco .itens .item p {
+  position: absolute;
+}
+
+section.preco .itens .item p.valor {
+  background-color: var(--cor-verde);
+  padding: var(--padding-quadro-menor);
+  border-radius: var(--radius-quadro-menor);
+  font-family: var(--fonte-app-bold);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--cor-primaria-2);
+  bottom: 35px;
+  left: 110px;
+  text-align: center;
+  transform: rotate(5deg);
+}
+
+section.preco .itens .item p.nome {
+  background-color: var(--cor-primaria-2);
+  padding: var(--padding-quadro-medio);
+  border-radius: var(--radius-quadro-menor);
+  font-family: var(--fonte-app-bold);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--cor-branco);
+  bottom: -20px;
+  left: 40px;
+  text-align: center;
+  transform: rotate(5deg);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.preco {
+    flex-direction: column;
+  }
+  section.preco .itens .item.primeiro {
+    margin-left: 20px;
+  }
+  section.preco .titulo {
+    align-items: flex-start;
+    text-align: left;
+  }
 }

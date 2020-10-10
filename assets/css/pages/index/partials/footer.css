@@ -5,6 +5,29 @@ INDEX PARTIALS FOOTER
 */
 
 footer {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
   background-color: var(--cor-primaria-2);
+  background-image: url('../../../../../images/desktop/background-footer.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+footer img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 700px) {
+  footer {
+    background-image: url('../../../../../images/mobile/background-footer.svg');
+  }
 }

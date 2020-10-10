@@ -5,5 +5,73 @@ INDEX PARTIALS SECTION CLIENTES
 */
 
 section.clientes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 20px 100px 20px;
   background-color: var(--cor-primaria-0);
+  background-image: url('../../../../../images/desktop/background-clientes.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* Quadro */
+
+section.clientes .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--cor-primaria-2);
+  padding: 100px 20px;
+  border-radius: var(--radius-quadro-maior);
+}
+
+section.clientes .quadro h2 {
+  width: 100%;
+  max-width: 400px;
+}
+
+section.clientes .quadro p {
+  width: 100%;
+  max-width: 500px;
+  padding-top: 10px;
+}
+
+section.clientes .quadro img {
+  position: absolute;
+}
+
+section.clientes .quadro img.trofeu {
+  width: 100%;
+  max-width: 150px;
+  top: -150px;
+  right: 100px;
+}
+
+section.clientes .quadro img.medalha {
+  width: 100%;
+  max-width: 100px;
+  top: -5px;
+  left: 50px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 700px) {
+  section.clientes {
+    padding: 180px 20px 100px 20px;
+    background-image: url('../../../../../images/mobile/background-clientes.svg');
+  }
+  section.clientes .quadro img.trofeu {
+    right: 30px;
+  }
+  section.clientes .quadro img.medalha {
+    max-width: 80px;
+  }
 }

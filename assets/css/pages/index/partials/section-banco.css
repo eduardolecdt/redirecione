@@ -11,6 +11,10 @@ section.banco {
   justify-content: center;
   padding: 100px 0px;
   background-color: var(--cor-primaria-3);
+  background-image: url('../../../../../images/desktop/background-banco.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Titulo */
@@ -71,6 +75,9 @@ section.banco .itens div {
 /* Responsivo */
 
 @media screen and (max-width: 700px) {
+  section.banco {
+    background-image: url('../../../../../images/mobile/background-banco.svg');
+  }
   section.banco .itens div {
     width: 110px;
     min-width: 110px;
